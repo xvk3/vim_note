@@ -18,6 +18,6 @@ syntax match KKS /\a\a\a\d\d\a\a\d\d\d\S*\|\s\n/
 syntax match KKS1 /\a\a\a\d\d\a\a\d\d\d\S*\|\s\n/ contained
 syntax match KKS2 /\a\a\a\d\d\a\a\d\d\d\S*\|\s\n/ contained
 
-syntax match noteAt /@\w*/
-syntax match noteAt2 /@\w*/ contained
-syntax match noteAt3 /@\w*/ contained
+syntax match noteAt /@\w+/
+syntax match noteAt2 /@\w+/ contained
+syntax match noteAt3 /@\w+/ contained
