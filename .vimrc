@@ -13,18 +13,16 @@ highlight Timestamp ctermfg=green guifg=#005f00
 highlight Complete ctermfg=green guifg=#005f00
 
 highlight noteParenthesis ctermfg=red guifg=#af0000
-highlight noteParenthesis2 ctermfg=red guifg=#af0000
+highlight noteParenthesis2 ctermfg=cyan guifg=#00ffff
 
 highlight noteCurlyBrace ctermfg=red guifg=#af0000
-highlight noteCurlyBrace2 ctermfg=red guifg=#af0000
+highlight noteCurlyBrace2 ctermfg=cyan guifg=#00ffff
 
 highlight noteUpUpUp ctermfg=cyan guifg=#00ffff
-highlight noteUpUpUp2 ctermfg=cyan guifg=#00ffff
+highlight noteUpUpUp2 ctermfg=magenta guifg=#d700ff
 
 highlight KKS ctermfg=yellow guifg=#878700
-highlight KKS2 ctermfg=magenta guifg=#d700ff
-highlight KKS1 ctermfg=yellow guifg=#878700
+highlight KKS2 ctermfg=red guifg=#af0000
 
 highlight noteAt ctermfg=red guifg=#af0000
-highlight noteAt2 ctermfg=red guifg=#af0000
-highlight noteAt3 ctermfg=cyan guifg=#00ffff
+highlight noteAt2 ctermfg=cyan guifg=#00ffff
