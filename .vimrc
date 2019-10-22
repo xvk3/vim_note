@@ -1,5 +1,7 @@
+colo desert
 syntax on
 set number
+set tabstop=2 shiftwidth=2 expandtab
 highlight LineNr ctermfg=red
 :set wrap linebreak nolist
 
@@ -26,3 +28,13 @@ highlight KKS2 ctermfg=red guifg=#af0000
 
 highlight noteAt ctermfg=red guifg=#af0000
 highlight noteAt2 ctermfg=cyan guifg=#00ffff
+
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'pangloss/vim-javascript'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+filetype indent off
