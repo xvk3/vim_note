@@ -1,10 +1,13 @@
 syntax on
 set number
+set tabstop=2 shiftwidth=2 expandtab
 highlight LineNr ctermfg=red
 :set wrap linebreak nolist
 
-map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>
+map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 cmap w!! w !sudo tee > /dev/null %
+
+iabbrev mods modifications
 
 highlight Timestamp ctermfg=green guifg=#005f00
 highlight Complete ctermfg=green guifg=#005f00
