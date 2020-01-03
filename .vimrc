@@ -1,8 +1,12 @@
 syntax on
+
 set number
-set tabstop=2 shiftwidth=2 expandtab
 highlight LineNr ctermfg=red
-:set wrap linebreak nolist
+
+set tabstop=2 shiftwidth=2 expandtab
+set wrap linebreak nolist
+
+set mouse=a
 
 map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 cmap w!! w !sudo tee > /dev/null %
