@@ -1,1 +1,1 @@
-syntax highlighting for note taking in vim
+VIM dotfiles for general ease-of-use and taking notes (.note file type).
