@@ -1,5 +1,7 @@
 syntax match Timestamp /^\d\d:\d\d \d\d[/]\d\d[/]\d\d\d\d -/
+
 syntax match Complete /^\/.*$/
+syntax match Incomplete /^\\.*$/
 
 syntax match noteSingleDash /^\s*- .*$/ contains=KKS,noteParenthesis,noteCurlyBrace,noteUpUpUp2,noteAt,noteArrow2
 syntax match noteDoubleDash /\-- .*$/ contains=KKS,noteParenthesis,noteCurlyBrace,noteUpUpUp,noteAt,noteArrow
