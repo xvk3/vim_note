@@ -8,7 +8,9 @@ set wrap linebreak nolist
 
 set mouse=a
 
-map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
+imap <F5> <esc>:.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
+map <F5> :.! date "+\%H:\%M \%d/\%m/\%y"<cr>$i<right><space><space>
+
 cmap w!! w !sudo tee > /dev/null %
 
 iabbrev mods modifications
