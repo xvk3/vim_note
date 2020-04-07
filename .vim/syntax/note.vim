@@ -1,4 +1,5 @@
 syntax match Timestamp /^\d\d:\d\d \d\d[/]\d\d[/]\d\d\d\d -/
+syntax match Timestamp2 /^\d\d:\d\d:\d\d \d\d[/]\d\d[/]\d\d\d\d -/
 
 syntax match Complete /^\/.*$/
 syntax match Incomplete /^\\.*$/
@@ -16,8 +17,8 @@ syntax match noteQuadruBang /^\s*!!!! .*$/
 syntax match noteParenthesis  /[(][^)]*[)]/
 syntax match noteParenthesis2 /[(][^)]*[)]/ contained
 
-syntax match noteCurlyBrace  /[{][^)]*[}]/
-syntax match noteCurlyBrace2 /[{][^)]*[}]/ contained
+syntax match noteCurlyBrace  /[{][^}]*[}]/
+syntax match noteCurlyBrace2 /[{][^}]*[}]/ contained
 
 syntax match noteUpUpUp     /\^/
 syntax match noteUpUpUp2    /\^/ contained
@@ -25,8 +26,8 @@ syntax match noteUpUpUp2    /\^/ contained
 syntax match KKS /\a\a\a\d\d\a\a\d\d\d\S*\|\s\n/
 syntax match KKS2 /\a\a\a\d\d\a\a\d\d\d\S*\|\s\n/ contained
 
-syntax match noteAt /@\w\w*/
-syntax match noteAt2 /@\w\w*/ contained
+syntax match noteAt / \zs@[^ |\n]*/
+syntax match noteAt2 / \zs@[^ |\n]*/ contained
 
 syntax match noteArrow /=>/
 syntax match noteArrow2 /=>/ contained

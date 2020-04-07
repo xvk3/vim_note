@@ -1,24 +1,38 @@
 syntax on
 
+" Line Numbers
 set number
 highlight LineNr ctermfg=red
 
+" Tabs -> Spaces
 set tabstop=2 shiftwidth=2 expandtab
+
+" Line Wrapping
 set wrap linebreak nolist
 
+" Enable mouse mode
 set mouse=a
 
+" Timestamps
 imap <F5> <esc>:.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
+imap <F6> <esc>:.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
+map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
+
+" (In)Complete Shortcuts
 nmap / I/<esc>
 nmap \ I\<esc>
 
+" Save without sudo
 cmap w!! w !sudo tee > /dev/null %
 
+" Typing shortcuts
 iabbrev mods modifications
 
+" Syntax Highlighting
 highlight Timestamp ctermfg=green guifg=#005f00
+highlight Timestamp2 ctermfg=green guifg=#005f00
 
 highlight Complete ctermfg=green guifg=#005f00
 highlight Incomplete ctermfg=red guifg=#af0000
