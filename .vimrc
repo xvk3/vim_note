@@ -9,7 +9,7 @@ set wrap linebreak nolist
 set mouse=a
 
 imap <F5> <esc>:.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
-map <F5> :.! date "+\%H:\%M \%d/\%m/\%y"<cr>$i<right><space>-<space>
+map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
 nmap / I/<esc>
 nmap \ I\<esc>
