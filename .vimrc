@@ -32,6 +32,8 @@ iabbrev mods modifications
 iabbrev recieve reveive
 iabbrev recipt receipt
 iabbrev favourate favourite
+iabbrev temp temperature
+iabbrev tmp temporary
 
 " Syntax Highlighting
 highlight Timestamp ctermfg=green guifg=#005f00
