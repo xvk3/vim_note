@@ -29,6 +29,9 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Typing shortcuts
 iabbrev mods modifications
+iabbrev recieve reveive
+iabbrev recipt receipt
+iabbrev favourate favourite
 
 " Syntax Highlighting
 highlight Timestamp ctermfg=green guifg=#005f00
