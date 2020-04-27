@@ -21,8 +21,13 @@ imap <F6> <esc>:.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
 " (In)Complete Shortcuts
-nmap / I/<esc>
-nmap \ I\<esc>
+"nmap / I/<esc>
+"nmap \ I\<esc>
+"nnoremap / :s/^\(\s*\)\/*/\1\/<CR>a
+"nnoremap \ :s/^\(\s*\)\/*/\1\/<CR>a
+nnoremap / :s/^\(\s*\)\/*\\*\/\*/\1\/<CR>
+nnoremap \ :s/^\(\s*\)\/*\\*\/\*/\1\\<CR>
+nnoremap - :s/^\(\s*\)\/*\\*\/\*/\1<CR>
 
 " Save without sudo
 cmap w!! w !sudo tee > /dev/null %
