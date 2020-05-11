@@ -21,8 +21,11 @@ imap <F6> <esc>:.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
 " (In)Complete Shortcuts
-nmap / I/<esc>
-nmap \ I\<esc>
+"nmap / I/<esc>
+"nmap \ I\<esc>
+nnoremap / :s/^\(\s*\)\/*\\*/\1\/<CR><esc>
+nnoremap \ :s/^\(\s*\)\/*\\*/\1\\<CR><esc>
+nnoremap - :s/^\(\s*\)\/*\\*/\1/<CR><esc>
 
 " Save without sudo
 cmap w!! w !sudo tee > /dev/null %
@@ -32,6 +35,8 @@ iabbrev mods modifications
 iabbrev recieve reveive
 iabbrev recipt receipt
 iabbrev favourate favourite
+iabbrev temp temperature
+iabbrev tmp temporary
 
 " Syntax Highlighting
 highlight Timestamp ctermfg=green guifg=#005f00
