@@ -1,25 +1,5 @@
 autocmd BufRead,BufNewFile *.note set filetype=note
 
-" Timestamps
-imap <F5> <esc>:.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
-map <F5> :.! date "+\%H:\%M \%d/\%m/\%Y"<cr>$i<right><space>-<space>
-
-imap <F6> <esc>:.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
-map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
-
-" (In)Complete Shortcuts
-nnoremap / :s/^\(\s*\)\/*\\*/\1\/<CR><esc>
-nnoremap \ :s/^\(\s*\)\/*\\*/\1\\<CR><esc>
-nnoremap - :s/^\(\s*\)\/*\\*/\1/<CR><esc>
-
-" Typing shortcuts
-iabbrev mods modifications
-iabbrev recieve receive
-iabbrev recipt receipt
-iabbrev favourate favourite
-iabbrev temp temperature
-iabbrev tmp temporary
-
 " Syntax Highlighting
 highlight Timestamp ctermfg=green guifg=#005f00
 highlight Timestamp2 ctermfg=green guifg=#005f00

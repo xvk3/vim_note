@@ -21,3 +21,6 @@ set mouse=a
 
 " Save without sudo
 cmap w!! w !sudo tee > /dev/null %
+
+" Syntax highlighting
+let g:asmsyntax = 'nasm'
