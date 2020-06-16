@@ -6,6 +6,7 @@ highlight Timestamp2 ctermfg=green guifg=#005f00
 
 highlight Complete ctermfg=green guifg=#005f00
 highlight Incomplete ctermfg=red guifg=#af0000
+highlight Questioned ctermfg=yellow guifg=#878700
 
 highlight noteSingleDash ctermfg=cyan guifg=#00ffff
 highlight noteDoubleDash ctermfg=magenta guifg=#d700ff

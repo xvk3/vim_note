@@ -7,7 +7,8 @@ map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
 " (In)Complete Shortcuts
 nnoremap / :s/^\(\s*\)\/*\\*/\1\/<CR><esc>
-nnoremap \ :s/^\(\s*\)\/*\\*/\1\\<CR><esc>
+nnoremap \ :s/^\(\s*\)\/*\?*\\*/\1\\<CR><esc>
+nnoremap ? :s/^\(\s*\)\/*\\*/\1\?<CR><esc>
 nnoremap - :s/^\(\s*\)\/*\\*/\1/<CR><esc>
 
 " Typing shortcuts
@@ -24,6 +25,7 @@ syntax match Timestamp2 /^\d\d:\d\d:\d\d \d\d[/]\d\d[/]\d\d\d\d -/
 
 syntax match Complete /^\/.*$/
 syntax match Incomplete /^\\.*$/
+syntax match Questioned /^\\?.*$/
 
 syntax match noteSingleDash /^\s*- .*$/ contains=KKS,noteParenthesis,noteCurlyBrace,noteUpUpUp2,noteAt,noteArrow2
 syntax match noteDoubleDash /\-- .*$/ contains=KKS,noteParenthesis,noteCurlyBrace,noteUpUpUp,noteAt,noteArrow
