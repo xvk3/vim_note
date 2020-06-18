@@ -8,7 +8,10 @@ filetype plugin on
 
 " Line Numbers
 set number
+
+" Highlighting
 highlight LineNr ctermfg=red
+highlight Comment ctermfg=green cterm=NONE
 
 " Tabs -> Spaces
 set tabstop=2 shiftwidth=2 expandtab
