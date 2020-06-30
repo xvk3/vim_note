@@ -7,7 +7,7 @@ map <F6> :.! date "+\%T \%d/\%m/\%Y"<cr>$i<right><space>-<space>
 
 " (In)Complete Shortcuts
 nnoremap / :s/^\(\s*\)\/*\\*/\1\/<CR><esc>
-nnoremap \ :s/^\(\s*\)\/*\?*\\*/\1\\<CR><esc>
+nnoremap \ :s/^\(\s*\)\/*\\*/\1\\<CR><esc>
 nnoremap ? :s/^\(\s*\)\/*\\*/\1\?<CR><esc>
 nnoremap - :s/^\(\s*\)\/*\\*/\1/<CR><esc>
 
