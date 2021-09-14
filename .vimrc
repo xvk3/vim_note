@@ -22,6 +22,9 @@ set wrap linebreak nolist
 " Enable mouse mode
 set mouse=a
 
+" Keep cursor 4 lines away from the top or bottom
+set scrolloff=4
+
 " Save without sudo
 cmap w!! w !sudo tee > /dev/null %
 
