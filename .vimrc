@@ -29,4 +29,5 @@ set scrolloff=4
 cmap w!! w !sudo tee > /dev/null %
 
 " Syntax highlighting
+let g:filetype_inc = "ia64"
 let g:asmsyntax = 'nasm'
